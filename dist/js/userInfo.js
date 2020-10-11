@@ -14,9 +14,12 @@ let tacoexp = document.querySelector(".tacoexp");
 ///hide timer
 document.querySelector(".usertime").style.display = "none";
 //////coding logic
-let apo = Math.round(user_apoints);
-let vpo = Math.round(user_vpoints);
-let tpo = Math.round(user_tpoints);
+////total percentage
+let tota = Number(user_apoints) + Number(user_vpoints) + Number(user_tpoints);
+
+let apo = Math.round((user_apoints / tota) * 100);
+let vpo = Math.round((user_vpoints / tota) * 100);
+let tpo = Math.round((user_tpoints / tota) * 100);
 
 document.querySelector("span.points").innerHTML = user_points;
 document.querySelector("span.apoints").innerHTML = apo + "%";
@@ -27,6 +30,9 @@ console.log(user_points);
 console.log(user_apoints);
 console.log(user_vpoints);
 console.log(user_tpoints);
+console.log(apo);
+console.log(vpo);
+console.log(tpo);
 audiexp.style.display = "none";
 viscoexp.style.display = "none";
 tacoexp.style.display = "none";

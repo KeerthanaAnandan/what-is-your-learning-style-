@@ -298,11 +298,15 @@ body {
 
     line-height: 1rem;
   }
-  .ul {
-    margin-left: 20px;
-  }
   #audi-topic {
     font-size: 5px;
+  }
+  .ul {
+    margin-left: 20px;
+    font-size: 5px;
+  }
+  #audi-topic {
+    font-size: 10px;
     font-weight: bold;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
